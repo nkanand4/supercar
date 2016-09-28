@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="TempTable" table="supercartemptable" schema="supercar">
+
+
+ <id column="temp_id" name="temp_id" type="java.lang.Long">
+      <generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"> 
+            <param name="sequence_name">HIBERNATE_SEQUENCE</param>
+            <param name="optimizer">none</param>
+            <param name="increment_size">1</param> 
+         </generator>
+    </id>
+    </class>
+ </hibernate-mapping>
